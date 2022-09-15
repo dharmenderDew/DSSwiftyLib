@@ -16,4 +16,4 @@ jobs:
     - name: Build
       run: xcodebuild -scheme DSSwiftyLib build
     - name: Run tests
-      run: swift test -v
+      run: xcodebuild test -scheme DSSwiftyLib -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max'
